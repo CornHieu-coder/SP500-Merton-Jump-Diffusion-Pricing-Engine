@@ -28,7 +28,7 @@ This engine follows a standard quantitative workflow: **Fetch $\rightarrow$ Proc
 
 ### 1. Data Ingestion
 * **Spot Price ($S_0$):** Fetched live from `^SPX`.
-* **Risk-Free Rate ($r$):** Constructed dynamically using US Treasury yields using Fredapito build a yield curve.
+* **Risk-Free Rate ($r$):** Constructed dynamically using US Treasury yields using Fredapi to build a yield curve.
 * **Dividend Yield ($q$):** Web-scraped via https://www.gurufocus.com/economic_indicators/150/sp-500-dividend-yield
 * **Market Options:** We download the full option chain for SPX, filtering for liquid contracts (Volume > 0, Bid > 0.5,...) to ensure data quality.
 
