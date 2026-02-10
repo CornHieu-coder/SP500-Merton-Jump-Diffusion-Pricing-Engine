@@ -1,0 +1,10 @@
+gradio
+yfinance
+pandas
+numpy
+scipy
+nelson-siegel-svensson
+fredapi
+plotly
+scikit-learn
+seleniumbase
