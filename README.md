@@ -59,5 +59,7 @@ Once the model is calibrated, we use the analytical solution (Merton's formula, 
 To run this application locally on your machine:
 
 **1. Clone the repository**
-**2. Install requirements.txt
-**3. Run live_app.py (gradio will handle the web interface)
+
+**2. Install requirements.txt**
+
+**3. Run live_app.py (gradio will handle the web interface)**
