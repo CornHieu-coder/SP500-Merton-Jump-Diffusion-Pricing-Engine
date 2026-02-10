@@ -60,6 +60,6 @@ To run this application locally on your machine:
 
 **1. Clone the repository**
 
-**2. Install requirements.txt**
+**2. Install dependencies in requirements.txt and make sure live_app.py and model_functions.py are downloaded inside the same folder**
 
 **3. Run live_app.py (gradio will handle the web interface)**
