@@ -9,7 +9,7 @@
 
 ## Overview
 
-This is a quantitative finance tool that prices **S&P 500 (SPX)** options using the **Merton Jump Diffusion Model (1976)**.
+This is a quantitative finance tool that prices **S&P 500 (SPX)** call options using the **Merton Jump Diffusion Model (1976)**.
 
 Unlike the standard Black-Scholes model, which assumes stock prices move smoothly, the Merton model accounts for sudden **"jumps"** in asset prices (e.g., due to market crashes or earnings shocks). This allows for a more accurate pricing of "out-of-the-money" options and captures the **volatility smile** observed in real markets.
 
