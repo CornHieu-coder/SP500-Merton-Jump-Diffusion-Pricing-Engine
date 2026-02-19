@@ -17,7 +17,7 @@ Unlike the standard Black-Scholes model, which assumes stock prices move smoothl
 
 * **Real-Time Calibration:** Fetches live SPX option chains and Treasury yields via `yfinance`.
 * **Fast Optimization:** Uses `scipy.optimize.minimize` (SLSQP) to quickly calibrate model parameters to current market prices.
-* **3D Visualization:** Plots the implied volatility/pricing surface to visualize market structure. 
+* **3D Visualization:** Plots the pricing surface to visualize market structure. 
 * **Custom Pricing:** After calibration, users can price any arbitrary option (custom Strike & Maturity).
 
 ---
