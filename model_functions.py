@@ -4,6 +4,7 @@ import pandas as pd
 import datetime as dt
 import numpy as np
 import math
+import os
 
 from scipy.stats import norm
 from scipy.optimize import minimize
@@ -74,8 +75,17 @@ def getting_data():
 def div_yield(df_clean,S):
     """II. Get risk-free zero coupon rate:"""
 
-    #Using fredapi to fetch yield curve data:
-    fred = Fred(api_key='191e63597aa9ee18de900a7e0c0a3b20')
+    # Using fredapi to fetch yield curve data from the environment.
+    fred_api_key = os.getenv("FRED_API_KEY")
+    if not fred_api_key:
+        raise ValueError(
+            "FRED_API_KEY is not set."
+            " Set it before running live_app.py, for example:"
+            " $env:FRED_API_KEY='your_fred_api_key_here' on Windows PowerShell"
+            " or export FRED_API_KEY=your_fred_api_key_here on macOS/Linux."
+        )
+
+    fred = Fred(api_key=fred_api_key)
 
     series_ids = {
         '1 Mo': 'DGS1MO',
